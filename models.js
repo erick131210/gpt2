@@ -83,6 +83,9 @@ Models.TextoIA = sequelize.define('textoIA', {
   nombreUsuario: {
     type: DataTypes.STRING
   },
+  ultimaAccion: {
+    type: DataTypes.STRING
+  },
   estado: {
     type: DataTypes.TINYINT
   },

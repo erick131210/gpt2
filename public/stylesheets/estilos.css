@@ -227,3 +227,11 @@ p {
   color: #fff;
 }
 
+.divTexto{
+  height: 70%;
+  overflow-y: scroll;
+}
+
+.textos{
+  height: auto;
+}
