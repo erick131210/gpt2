@@ -246,6 +246,7 @@ router.get('/generadorIA/:nombreEscenario/:nombrePersonaje/:idTextoIA/:idParrafo
   res.locals.idTextoIA = req.params.idTextoIA;
   res.locals.idParrafo = req.params.idParrafo;
   res.locals.ultimaAccion = texto.ultimaAccion;
+  res.locals.usuario = req.session.usuario.usuario;
 
   res.locals.title = "IA";
   res.locals.content = "texto/textoGenerado";

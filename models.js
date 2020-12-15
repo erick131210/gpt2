@@ -1,6 +1,6 @@
 const { Sequelize, DataTypes, Op } = require('sequelize');
 
-const sequelize = new Sequelize('mysql://root:password@localhost/gpt2', {
+const sequelize = new Sequelize('mysql://doadmin:xc0s5az95sidsvnu@db-mysql-sfo2-95666-do-user-8446385-0.b.db.ondigitalocean.com:25060/defaultdb', {
   define: {
     freezeTableName: true
   }
