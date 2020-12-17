@@ -1,1 +1,0 @@
-python3 main.py --text "table green"
