@@ -1,0 +1,73 @@
+<script>
+  function generarContrasenia(lon = 5, obj = null) {
+      var contraseniaAleatoria = '';
+      var caracteres = 'abcdefghijklmnopqrstuvwxyz';
+      var longitudCaracteres = caracteres.length;
+
+      for (var i = 0; i < lon; i++) {
+          contraseniaAleatoria += caracteres.charAt(Math.floor(Math.random() * longitudCaracteres));
+      }
+
+      console.log("CONTRASEÑA ALEATORIA", contraseniaAleatoria);
+      if (obj != null) {
+          $(obj).val(contraseniaAleatoria);
+      }
+  }
+
+  function limpiar(obj1, obj2, obj3, obj4) {
+      $(obj1).val(null);
+      $(obj2).val(null);
+      $(obj3).val(null);
+      $(obj4).val(null);
+  }
+
+  function generarNombreUsuario(inputUsuario){
+    let nombreUsuario = $("#nombreUsuario").val();
+    let apellidoUsuario = $("#apellidoUsuario").val();
+
+    valor = nombreUsuario.substring(0,1).toLowerCase() + apellidoUsuario.toLowerCase();
+
+    $(inputUsuario).val(valor);
+  }
+
+</script>
+
+<div class="row">
+  <div class="container-md containerForms">
+      <h2><%- tituloForm %></h2>
+      <br>
+      <form action="/panelDeControl/save" method="POST">
+          <div class="form-group">
+              <input type="hidden" value="<%- obj.idUsuario %>" name="idUsuario" id="idUsuario" />
+              <label><span class="nombreLabel">Nombre (*)</span></label>
+              <input type="text" onkeyup="generarNombreUsuario('#usuario')" value="<%- obj.nombreUsuario %>" name="nombreUsuario" id="nombreUsuario" class="form-control" />
+              <br>
+              <label><span class="nombreLabel">Apellido (*)</span></label>
+              <input type="text" onkeyup="generarNombreUsuario('#usuario')" value="<%- obj.apellidoUsuario %>" name="apellidoUsuario" id="apellidoUsuario" class="form-control" />
+              <br>
+              <label><span class="nombreLabel">Usuario (*)</span></label>
+              <input type="text" value="<%- obj.usuario %>" name="usuario" id="usuario" class="form-control" readonly="readonly" />
+              <br>
+
+              <label><span class="nombreLabel">Contraseña (*)</span></label>
+
+              <div class="input-group passRandom">
+                  <input type="text" value="<%- obj.password %>" name="password" id="password" class="form-control">
+                  <div class="input-group-append">
+                      <button type="button" onclick="generarContrasenia(5, '#password');"
+                          class="btn btn-dark">Generar Contraseña</button>
+                  </div>
+              </div>
+              <br>
+              <br>
+              (*) Campo obligatorio
+              <br><br>
+              <button type="button" onclick="limpiar('#nombreUsuario', '#apellidoUsuario', '#usuario', '#password');" class="btn btn-secondary">Limpiar</button>
+              <br>
+              <br>
+              <a href="/panelDeControl/list" class="btn btn-danger">Cancelar</a>
+              <input type="submit" class="btn btn-primary" value="Guardar" />
+          </div>
+      </form>
+  </div>
+</div>

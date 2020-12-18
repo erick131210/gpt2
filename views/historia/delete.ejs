@@ -1,0 +1,10 @@
+<div class="container-md containerTablas">
+  <h3 style="color: aliceblue; font-weight: bold;">¿Seguro que quiere eliminar la historia <%- obj.idTextoIA %>? </h3>
+  <br>
+  <form action="/ia/historia/delete/<%- obj.idTextoIA %>" method="POST">
+      <input type="hidden" value="<%- obj.idTextoIA %>" />
+      
+      <a href="/ia/misHistorias" class="btn btn-danger">Cancelar</a>
+      <input type="submit" class="btn btn-primary" value="Borrar" />
+  </form>
+</div>

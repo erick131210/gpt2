@@ -1,0 +1,311 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: black;
+
+}
+
+h2{
+  color: #fff;
+  font-weight: bold;
+}
+
+.startBody{
+  background: rgb(59, 59, 59);
+  /*
+  background-image: url("/images/inteligencia-artificial.png");
+  */
+  background-image: url("/images/IA.gif");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+}
+
+.bodyFullHeight {
+  /*
+  background: #E69999;
+  */
+  background: #3C46A4;
+  height: 100%;
+  margin: 0px;
+}
+
+.btnWidth{
+  width: 60%;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.htmlFullHeight {
+  height: 100%;
+}
+
+.centrarDivVerticalmente{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.centrarInputTypeVerticalmente{
+  display: table-row;
+  vertical-align: middle;
+}
+
+.imagenLogin {
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botonStart {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  display: block;
+  font: 30px "Lucida Grande";
+}
+
+.containerPrincipal {
+  width: 50%;
+}
+
+.modalBody{
+  display: block;
+  color: black;
+  position: absolute;
+}
+
+.parrafo {
+  font-weight: 300; 
+  font-size: 17px; 
+  padding: 20px; 
+  color: black; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.botonLogin {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 90%;
+}
+
+.selectAlumno {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 30%;
+}
+
+.campoTextoLogin {
+  width: 100%;
+}
+
+.logoLogin {
+  width: 12em;
+  display: block;
+  margin: auto;
+}
+
+.formLogin{
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+.centrarDivHorizontalmente{
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+.input-group{
+  margin-top: 20px;
+}
+
+.botonIngresar{
+  background-color: rgb(19, 44, 116);
+  color: white;
+  font-weight: bold;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.botonIngresar:hover{
+  background-color: rgb(11, 25, 63);
+}
+
+.input-group-text.loginPrepend{
+  width: 7em;
+  background-color: maroon;
+  color: #fff;
+  display: unset;
+}
+
+.spanSeleccion{
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.escogerEscenario{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.divSeleccion{
+  display: flex; 
+  margin-bottom: 8px;
+  margin-top: 8px; 
+  margin-left: auto;
+}
+
+.botonSeleccion {
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(59, 59, 59); 
+  border-radius: 5px; 
+  display: flex; 
+  height: 40px; 
+  transition-duration: 0s; 
+  width: 50px;
+  border-color: black;
+  transition: background-color .2s;
+}
+
+.botonSeleccion:hover{
+  background-color: steelblue;
+}
+
+.numeroSeleccion {
+  color: rgb(255, 255, 255); 
+  font-family: HelveticaNeue-Light, Helvetica, sans-serif; 
+  font-size: 20px; 
+  padding-right: 8px; 
+  padding-left: 8px; 
+  text-transform: uppercase;
+}
+
+
+.ingresoNombre {
+  margin: auto;
+  height: 30px;
+  width: 90%; 
+}
+
+.divSeleccionNombre {
+  text-align: center;
+}
+
+
+.textoGenerado{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.passRandom{
+  margin-top: 0px;
+}
+
+.containerForms{
+  width: 50%;
+  margin-top: 5em;
+}
+
+.cuerpoTabla{
+  background: rgba(183, 180, 207, 0.979);
+  margin-top: 10px;
+}
+
+.cabeceraTabla{
+  background: rgba(19, 5, 138, 0.671);
+  color: #fff;
+}
+
+.divTexto{
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.textos{
+  display: flex;
+  height: 700px;
+}
+
+
+
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template/simple-sidebar)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+ #wrapper {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+/*min-height: 100vh;*/
+margin-right: -20rem;
+-webkit-transition: margin .25s ease-out;
+-moz-transition: margin .25s ease-out;
+-o-transition: margin .25s ease-out;
+transition: margin .25s ease-out;
+background-color: #b8bbd4;
+position: relative;
+width: 18rem;
+
+}
+
+#sidebar-wrapper .sidebar-heading {
+padding: 0.875rem 1.25rem;
+font-size: 1.2rem;
+color: #fff;
+}
+
+#sidebar-wrapper .list-group {
+width: 18rem;
+}
+
+#page-content-wrapper {
+min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+margin-left: 0;
+}
+
+.list-group-item{
+  background-color: #b8bbd4;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+#sidebar-wrapper {
+  margin-left: -2rem;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 50rem;
+}
+}
+
+
