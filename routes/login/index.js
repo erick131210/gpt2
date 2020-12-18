@@ -37,7 +37,7 @@ router.post("/login", async function (req, res, next) {
   let usuarioEncontrado = usuarios[0];
 
   // Si el tipo de usuario es alumno
-  if (usuarioEncontrado.tipoUsuario == "alumno") {
+  if (usuarioEncontrado.tipoUsuario == "alumno" || usuarioEncontrado.tipoUsuario == "master")  {
 
     req.session.usuario = usuarios[0];
     req.session.docente = undefined;
